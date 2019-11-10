@@ -1,7 +1,11 @@
 <template>
-  <v-parallax dark height="400" src="https://i.imgur.com/fvxDsYE.jpg">
+  <v-parallax
+    dark
+    height="400"
+    :src="require('@/assets/keep_calm_and_code.jpg')"
+  >
     <v-row align="center" justify="center">
-      <v-layout class="text-center" justify-center>
+      <v-layout class="text-center darken-3" justify-center>
         <v-flex md6 xs11 sm11>
           <h1 class="display-1 font-weight-thin mb-4" v-text="message"></h1>
           <h4 class="headline" v-text="description"></h4>

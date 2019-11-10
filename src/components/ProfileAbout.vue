@@ -3,7 +3,7 @@
     <v-layout row justify-center align-center class="mt-n12">
       <v-flex class="text-center mt-n12">
         <v-avatar :size="150" class="mb-3 elevation-8">
-          <v-img src="https://i.imgur.com/C4xtdhP.png" alt="mark anthony">
+          <v-img :src="require('@/assets/mark.jpg')" alt="mark anthony">
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular
@@ -24,18 +24,6 @@
           <!-- <h3 class="headline--text my-8 headline">About Me</h3> -->
         </div>
       </v-flex>
-      <!-- <v-flex md5 xs12 sm12 class="text-center">
-        <v-avatar color="indigo" :size="150" class="mb-3">
-          <img
-            :src="require('@/assets//grad_pic_crop.jpg')"
-            alt="mark anthony"
-            height="240"
-            width="240"
-          />
-        </v-avatar>
-        <h4 class="subtitle-1 teal--text">{{ myName }}</h4>
-        <p>{{ myJob }}</p>
-      </v-flex>-->
       <v-flex md9 xs9 sm9 justify-center align-center>
         <div class="text-center">
           <br />
