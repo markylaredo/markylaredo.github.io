@@ -2,14 +2,20 @@
   <v-container fluid white>
     <v-layout row justify-center align-center class="mt-n12">
       <v-flex class="text-center mt-n12">
-        <v-avatar color="indigo" :size="150" class="mb-3 elevation-8">
-          <img
+        <v-avatar :size="150" class="mb-3 elevation-8">
+          <v-img
             src="https://lh3.googleusercontent.com/7siZhzgNGobyIiVLoD5mm6i54wlZCQztlQJSMhgp9JeGOzejoA681VmTWZ54IkTvrRk0YRqBVxvZtfvme7UgR8P-t1jYfzWtOmzx_N0135YFPuJ91mjERbv17s3joszgz-XRR-Y0lPqi59IheHrjGU2Tpo985kjZir9OcDH5kmj8JNFubxC9iUIyJUkTPqszlSfzjrQiYpaFRkB9TwT-L1Y1lLeISogvB4CW74pT1Fov7rdLYtGMJ6wGL3l83YfbgXm8KJeJOSCtuex5IyKQ82JR9w5LoXDN29VM10-A7SV9a6aIcvRPXZyw7Afr3Gc55oLoaCRVNinNZvDp313oTfdpZ82ULPLo9Y8hl66rcCcwDldUqoB0aXZ5NMQ9bP-GNQYv_MGUaoufyaBGQPo9Gs6Po1sHEyWF4VzyGSfzNruoNcoYPc2GZKJZK9n2ZBtgz2UW3Mo_rOhtyvCpG6i4C2rBUhxWEFndvOh-b4ifdzl7SzeHtfFtJZLLGVyUzT60JsL7e8EGDE7VpXdsf6qxWDIvlumL5Xd5cpBh8fyRXw9zJNKFdKBP9Jn8svvSjRQu7hzkELWWcgoCMvtvFBfdNHlcWSXbsvs10NksllLiSAfvCvLDTX1IExWzMkvYqwpG-dQv3fMm5NvvY-UwKjtFcwmgyNihWVM_CNl3bFRg2wSd-qCwCR_iDQ=s768-no"
-            lazy-src="https://lh3.googleusercontent.com/7siZhzgNGobyIiVLoD5mm6i54wlZCQztlQJSMhgp9JeGOzejoA681VmTWZ54IkTvrRk0YRqBVxvZtfvme7UgR8P-t1jYfzWtOmzx_N0135YFPuJ91mjERbv17s3joszgz-XRR-Y0lPqi59IheHrjGU2Tpo985kjZir9OcDH5kmj8JNFubxC9iUIyJUkTPqszlSfzjrQiYpaFRkB9TwT-L1Y1lLeISogvB4CW74pT1Fov7rdLYtGMJ6wGL3l83YfbgXm8KJeJOSCtuex5IyKQ82JR9w5LoXDN29VM10-A7SV9a6aIcvRPXZyw7Afr3Gc55oLoaCRVNinNZvDp313oTfdpZ82ULPLo9Y8hl66rcCcwDldUqoB0aXZ5NMQ9bP-GNQYv_MGUaoufyaBGQPo9Gs6Po1sHEyWF4VzyGSfzNruoNcoYPc2GZKJZK9n2ZBtgz2UW3Mo_rOhtyvCpG6i4C2rBUhxWEFndvOh-b4ifdzl7SzeHtfFtJZLLGVyUzT60JsL7e8EGDE7VpXdsf6qxWDIvlumL5Xd5cpBh8fyRXw9zJNKFdKBP9Jn8svvSjRQu7hzkELWWcgoCMvtvFBfdNHlcWSXbsvs10NksllLiSAfvCvLDTX1IExWzMkvYqwpG-dQv3fMm5NvvY-UwKjtFcwmgyNihWVM_CNl3bFRg2wSd-qCwCR_iDQ=s768-no"
             alt="mark anthony"
-            height="240"
-            width="240"
-          />
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-avatar>
       </v-flex>
 

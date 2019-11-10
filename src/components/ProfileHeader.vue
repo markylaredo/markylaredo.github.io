@@ -1,5 +1,5 @@
 <template>
-  <v-parallax dark height="400" src="https://i.imgur.com/fvxDsYE.jpg"  lazy-src="https://i.imgur.com/fvxDsYE.jpg">
+  <v-parallax dark height="400" src="https://i.imgur.com/fvxDsYE.jpg">
     <v-row align="center" justify="center">
       <v-layout class="text-center" justify-center>
         <v-flex md6 xs11 sm11>

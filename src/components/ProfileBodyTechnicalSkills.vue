@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid green lighten-5>
-    <v-layout row justify-center justify-space-around="">
+  <v-container fluid light-blue lighten-5>
+    <v-layout row justify-center justify-space-around>
       <v-flex xs12 md12 sm12 class="text-center">
         <div class="text-center">
           <h3 class="mt-8 headline">Technical Skills</h3>
@@ -36,7 +36,6 @@
           </v-chip-group>
         </div>
       </v-flex>
-      <!-- <v-divider inset vertical></v-divider> -->
       <!-- TOOLS -->
       <v-flex md3 xs9 sm9>
         <h4 class="title my-8 text-center gray--text">
@@ -67,7 +66,6 @@
           </v-chip-group>
         </div>
       </v-flex>
-      <!-- <v-divider inset vertical></v-divider> -->
 
       <v-flex md3 xs9 sm9>
         <h4 class="title my-8 text-center gray--text">
@@ -84,34 +82,12 @@
             v-for="stuff in otherStuffs"
             :key="stuff"
           >
-            <v-avatar color="blue-grey darken-4" left>
-              <v-icon color="yellow accent-3">mdi-certificate</v-icon>
+            <v-avatar color="blue" left>
+              <v-icon color="white">mdi-star</v-icon>
             </v-avatar>
             {{ stuff }}
           </v-chip>
         </v-chip-group>
-      </v-flex>
-    </v-layout>
-
-    <v-layout row justify-center align-center>
-      <v-flex xs12 md12 sm12 class="text-center">
-        <div class="text-center">
-          <h3 class="teal--text my-8 title">Work Experience</h3>
-        </div>
-      </v-flex>
-      <v-flex md5 xs9 mb-12>
-        <h4 class="subtitle-2 text-center">On Development...</h4>
-      </v-flex>
-    </v-layout>
-
-    <v-layout row justify-center align-center>
-      <v-flex xs12 md12 sm12 class="text-center">
-        <div class="text-center">
-          <h3 class="teal--text my-8 title">My Works</h3>
-        </div>
-      </v-flex>
-      <v-flex md5 xs9 mb-12>
-        <h4 class="subtitle-2 text-center">On Development...</h4>
       </v-flex>
     </v-layout>
   </v-container>
