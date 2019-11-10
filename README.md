@@ -1,6 +1,6 @@
 # mark-anthony-laredo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0369cd2c-da48-4809-8a06-ee4bf29df70b/deploy-status)](https://app.netlify.com/sites/marklaredo/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/87a5be9e-bf1c-43e3-bdb4-6a64fea349fd/deploy-status)](https://app.netlify.com/sites/marklaredo/deploys)
 
 
 # Project setup
