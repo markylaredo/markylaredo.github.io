@@ -21,8 +21,8 @@
       </v-flex>
       <v-flex md5 xs9 sm9 justify-center align-center>
         <div class="text-center">
-          <br>
-           <p class="subheading text-justify">
+          <br />
+          <p class="subheading text-justify">
             {{ aboutMe1 }}
           </p>
           <p class="subheading text-justify">
@@ -39,7 +39,8 @@ export default {
     return {
       myName: "Mark Anthony Laredo",
       myJob: "Software Engineer",
-      aboutMe1:"Experienced Software Engineer with a demonstrated history of working in the IT industry. Strong engineering professional with a Bachelor's degree focused in Information Technology from Occidental Mindoro State College.",
+      aboutMe1:
+        "Experienced Software Engineer with a demonstrated history of working in the IT industry. Strong engineering professional with a Bachelor's degree focused in Information Technology from Occidental Mindoro State College.",
       aboutMe2:
         "Goal-oriented Web Developer with strong commitment to collaboration and solutions-oriented problem solving. Use various web design software to develop customer-focused websites and designs. Committed to high standards of web design, user experience, usability and speed for multiple types of end-users. Successful at maintaining customer satisfaction through effective customer support.",
       alignment: "center",

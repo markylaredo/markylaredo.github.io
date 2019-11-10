@@ -8,17 +8,25 @@
       </v-flex>
       <!-- programming language and frameworks -->
       <v-flex md3 xs9 sm9>
-        <h4 class="subtitle-1 text-center gray--text">Programming and Frameworks</h4>
+        <h4 class="subtitle-1 text-center gray--text">
+          Programming and Frameworks
+        </h4>
         <v-divider class="ma-5"></v-divider>
         <div class="text-center">
           <v-chip-group column>
             <v-tooltip bottom v-for="prg in programing" :key="prg.lang">
               <template v-slot:activator="{ on }">
-                <v-chip color="white" pill icon v-on="on" @click="redirect(prg.link)">
+                <v-chip
+                  color="white"
+                  pill
+                  icon
+                  v-on="on"
+                  @click="redirect(prg.link)"
+                >
                   <v-avatar v-on="on" color="teal lighten-4" left>
                     <v-img :src="prg.icon"></v-img>
                   </v-avatar>
-                  {{prg.lang}}
+                  {{ prg.lang }}
                 </v-chip>
               </template>
               <span>View More info</span>
@@ -34,11 +42,15 @@
           <v-chip-group column>
             <v-chip color="white" pill v-for="tool in tools" :key="tool.icon">
               <v-avatar color="teal" left>
-                <v-icon v-if="tool.iconType==='icon'" class="white--text" v-html="tool.icon"></v-icon>
-                <v-img v-if="tool.iconType==='img'" :src="tool.icon"></v-img>
-                <span v-else class="white--text">{{tool.icon}}</span>
+                <v-icon
+                  v-if="tool.iconType === 'icon'"
+                  class="white--text"
+                  v-html="tool.icon"
+                ></v-icon>
+                <v-img v-if="tool.iconType === 'img'" :src="tool.icon"></v-img>
+                <span v-else class="white--text">{{ tool.icon }}</span>
               </v-avatar>
-              {{tool.lang}}
+              {{ tool.lang }}
             </v-chip>
           </v-chip-group>
         </div>
@@ -61,7 +73,7 @@
       </v-flex>
     </v-layout>
 
-     <v-layout row justify-center align-center>
+    <v-layout row justify-center align-center>
       <v-flex xs12 md12 sm12 class="text-center">
         <div class="text-center">
           <h3 class="teal--text my-8 title">My Works</h3>

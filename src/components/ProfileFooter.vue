@@ -1,10 +1,9 @@
 <template>
   <v-footer padless absolute>
-    <v-layout
-      justify-center
-      align-center
-      class="caption pa-3"
-    >Copyright &copy; {{new Date().getFullYear()}} Mark Anthony Maat Laredo. All Rights Reserved.</v-layout>
+    <v-layout justify-center align-center class="caption pa-3"
+      >Copyright &copy; {{ new Date().getFullYear() }} Mark Anthony Maat Laredo.
+      All Rights Reserved.</v-layout
+    >
   </v-footer>
 </template>
 
