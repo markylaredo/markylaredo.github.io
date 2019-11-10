@@ -70,7 +70,7 @@
       </v-flex>
       <v-flex md3 xs9 sm9>
         <h4 class="title my-8 text-center gray--text">
-          Do Other Stuff
+          Other Stuff
           <span>
             <p class="body-1">I do extra things like:</p>
           </span>
