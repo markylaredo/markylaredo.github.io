@@ -5,7 +5,7 @@ import {
 if (process.env.NODE_ENV === 'production') {
     register('/service-worker.js', {
         registrationOptions: {
-            scope: './'
+            scope: '/'
         },
         ready(registration) {
             console.log('Service worker is active.')
