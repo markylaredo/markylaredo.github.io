@@ -3,13 +3,16 @@
     <v-layout row justify-center justify-space-around>
       <v-flex xs12 md12 sm12 class="text-center">
         <div class="text-center">
-          <h3 class="headline--text mt-8 headline">Technical Skills</h3>
+          <h3 class="mt-8 headline">Technical Skills</h3>
         </div>
       </v-flex>
       <!-- programming language and frameworks -->
       <v-flex md3 xs9 sm9>
-        <h4 class="subtitle-1 my-8 text-center gray--text">
+        <h4 class="title my-8 text-center gray--text">
           Programming and Frameworks
+          <span>
+            <p class="body-1">Program & frameworks I frequently use.</p>
+          </span>
         </h4>
         <v-divider class="ma-5"></v-divider>
         <div class="text-center">
@@ -23,7 +26,7 @@
                   v-on="on"
                   @click="redirect(prg.link)"
                 >
-                  <v-avatar v-on="on" color="teal lighten-4" left>
+                  <v-avatar color="teal lighten-4" left>
                     <v-img :src="prg.icon"></v-img>
                   </v-avatar>
                   {{ prg.lang }}
@@ -36,8 +39,11 @@
       </v-flex>
       <!-- TOOLS -->
       <v-flex md3 xs9 sm9>
-        <h4 class="subtitle-1 my-8 text-center gray--text">
+        <h4 class="title my-8 text-center gray--text">
           Tools and Libraries
+          <span>
+            <p class="body-1">Tools and libraries I frequently use.</p>
+          </span>
         </h4>
         <v-divider class="ma-5"></v-divider>
         <div class="text-center">
@@ -51,7 +57,7 @@
                   v-on="on"
                   @click="redirect(tool.link)"
                 >
-                  <v-avatar v-on="on" color="teal lighten-4" left>
+                  <v-avatar color="teal lighten-4" left>
                     <v-img :src="tool.icon"></v-img>
                   </v-avatar>
                   {{ tool.lang }}
@@ -63,11 +69,27 @@
         </div>
       </v-flex>
       <v-flex md3 xs9 sm9>
-        <h4 class="subtitle-1 my-8 text-center gray--text">
-          Tools and Libraries
+        <h4 class="title my-8 text-center gray--text">
+          Do Other Stuff
+          <span>
+            <p class="body-1">I do extra things like:</p>
+          </span>
         </h4>
         <v-divider class="ma-5"></v-divider>
-        <h4 class="subtitle-2 text-center">On Development...</h4>
+        <v-chip-group column>
+          <v-chip
+            color="white"
+            pill
+            icon
+            v-for="stuff in otherStuffs"
+            :key="stuff"
+          >
+            <v-avatar color="blue lighten-4" left>
+              <v-icon color="green">mdi-check</v-icon>
+            </v-avatar>
+            {{ stuff }}
+          </v-chip>
+        </v-chip-group>
       </v-flex>
     </v-layout>
 
@@ -211,6 +233,11 @@ export default {
           lang: "Visual Studio Code",
           link: "https://visualstudio.microsoft.com/vs/"
         }
+      ],
+      otherStuffs: [
+        "Format Computer",
+        "Configure Computer Network",
+        "Computer Hardware troubleshoot"
       ]
     };
   },

@@ -3,8 +3,8 @@
     <v-layout row justify-center align-center>
       <v-flex xs12 md12 sm12 class="text-center">
         <div class="text-center">
-          <!-- <h3 class="teal--text my-8 title">About Me</h3> -->
-          <h3 class="headline--text my-8 headline">About Me</h3>
+          <h3 class="my-8 headline">About Me</h3>
+          <!-- <h3 class="headline--text my-8 headline">About Me</h3> -->
         </div>
       </v-flex>
       <v-flex md5 xs12 sm12 class="text-center">
