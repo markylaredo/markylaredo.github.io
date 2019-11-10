@@ -3,6 +3,8 @@ import App from "./App.vue";
 import vuetify from "./plugins/vuetify";
 import router from "./router";
 import "@babel/polyfill";
+import "./plugins/service-worker";
+
 Vue.config.productionTip = false;
 
 new Vue({

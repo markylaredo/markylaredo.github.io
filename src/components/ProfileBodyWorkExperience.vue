@@ -44,7 +44,7 @@ export default {
       {
         color: "blue",
         icon: "mdi-briefcase-account",
-        year: "Aug. 2014 - Oct. 2014",
+        year: "08/2014 - 10/2014",
         work: "Technical Support Intern",
         where: "San Jose Police Station (SJMPS)",
         addr: "San Jose, Occidental Mindoro"
@@ -52,7 +52,7 @@ export default {
       {
         color: "blue",
         icon: "mdi-briefcase-account",
-        year: "April 3, 2016 to March 2, 2018",
+        year: "04/03/2016 - 03/02/2018",
         work: "Software Engineer",
         where: "Jade Phone English Tutorial Service",
         addr: "Rm.201-A Culmat Bldg. E.Rodriguez Sr. Ave. Brgy. Mariana 1112"
@@ -60,7 +60,7 @@ export default {
       {
         color: "blue",
         icon: "mdi-briefcase-account",
-        year: "March 5, 2018 to March 20, 2019",
+        year: "03/05/2018 - 03/20/2019",
         work: "Software Engineer",
         where: "Binary Data Frame Corporation",
         addr:
