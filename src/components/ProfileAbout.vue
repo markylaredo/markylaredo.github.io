@@ -37,7 +37,7 @@
 export default {
   data: function() {
     return {
-      myName: "Mark Anthony Laredo",
+      myName: "Mark Anthony Maat Laredo",
       myJob: "Software Engineer",
       aboutMe1:
         "Experienced Software Engineer with a demonstrated history of working in the IT industry. Strong engineering professional with a Bachelor's degree focused in Information Technology from Occidental Mindoro State College.",
