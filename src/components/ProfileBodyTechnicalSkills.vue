@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid teal lighten-5>
-    <v-layout row justify-center justify-space-around>
+  <v-container fluid green lighten-5>
+    <v-layout row justify-center justify-space-around="">
       <v-flex xs12 md12 sm12 class="text-center">
         <div class="text-center">
           <h3 class="mt-8 headline">Technical Skills</h3>
@@ -14,7 +14,6 @@
             <p class="body-1">Program & frameworks I frequently use.</p>
           </span>
         </h4>
-        <v-divider class="ma-5"></v-divider>
         <div class="text-center">
           <v-chip-group column>
             <v-tooltip bottom v-for="prg in programing" :key="prg.lang">
@@ -37,6 +36,7 @@
           </v-chip-group>
         </div>
       </v-flex>
+      <!-- <v-divider inset vertical></v-divider> -->
       <!-- TOOLS -->
       <v-flex md3 xs9 sm9>
         <h4 class="title my-8 text-center gray--text">
@@ -45,7 +45,6 @@
             <p class="body-1">Tools and libraries I frequently use.</p>
           </span>
         </h4>
-        <v-divider class="ma-5"></v-divider>
         <div class="text-center">
           <v-chip-group column>
             <v-tooltip bottom v-for="tool in tools" :key="tool.lang">
@@ -68,6 +67,8 @@
           </v-chip-group>
         </div>
       </v-flex>
+      <!-- <v-divider inset vertical></v-divider> -->
+
       <v-flex md3 xs9 sm9>
         <h4 class="title my-8 text-center gray--text">
           Other Stuff
@@ -75,7 +76,6 @@
             <p class="body-1">I do extra things like:</p>
           </span>
         </h4>
-        <v-divider class="ma-5"></v-divider>
         <v-chip-group column>
           <v-chip
             color="white"
@@ -84,8 +84,8 @@
             v-for="stuff in otherStuffs"
             :key="stuff"
           >
-            <v-avatar color="blue lighten-4" left>
-              <v-icon color="green">mdi-check</v-icon>
+            <v-avatar color="blue-grey darken-4" left>
+              <v-icon color="yellow accent-3">mdi-certificate</v-icon>
             </v-avatar>
             {{ stuff }}
           </v-chip>
