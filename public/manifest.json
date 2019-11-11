@@ -2,9 +2,9 @@
     "name": "MarkAnthonyPortfolio",
     "short_name": "Mr. MA",
     "start_url": "./index.html",
-    "background_color": "#006B41",
+    "background_color": "#29B6F6",
     "display": "standalone",
-    "theme_color": "#006B41",
+    "theme_color": "#29B6F6",
     "icons": [
         {
             "src": "\/icons/android-icon-36x36.png",

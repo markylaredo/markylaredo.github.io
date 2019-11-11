@@ -29,4 +29,11 @@ if (process.env.NODE_ENV === 'production') {
       console.error('Error during service worker registration:', error)
     }
   })
+
+  let refreshing
+  navigator.serviceWorker.addEventListener("controllerchange", e=>{
+    if (refreshing) return
+    window.location.reload()
+    refreshing = true
+  })  
 }

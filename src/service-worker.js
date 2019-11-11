@@ -7,11 +7,11 @@ const offlineFallbackPage = "ToDo-replace-this-name.html";
 
 // Install stage sets up the index page (home page) in the cache and opens a new cache
 self.addEventListener("install", function (event) {
-  console.log("[PWA Builder] Install Event processing");
+  console.log("[CUSTOM SERVICE WORKER] Install Event processing");
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      console.log("[PWA Builder] Cached offline page during install");
+      console.log("[CUSTOM SERVICE WORKER] Cached offline page during install");
 
       if (offlineFallbackPage === "ToDo-replace-this-name.html") {
         return cache.add(new Response("TODO: Update the value of the offlineFallbackPage constant in the serviceworker."));
@@ -29,7 +29,7 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
-        console.log("[PWA Builder] add page to offline cache: " + response.url);
+        console.log("[CUSTOM SERVICE WORKER] add page to offline cache: " + response.url);
 
         // If request was success, add or update it in the cache
         event.waitUntil(updateCache(event.request, response.clone()));
@@ -37,7 +37,7 @@ self.addEventListener("fetch", function (event) {
         return response;
       })
       .catch(function (error) {        
-        console.log("[PWA Builder] Network request Failed. Serving content from cache: " + error);
+        console.log("[CUSTOM SERVICE WORKER] Network request Failed. Serving content from cache: " + error);
         return fromCache(event.request);
       })
   );
@@ -72,14 +72,14 @@ function updateCache(request, response) {
 // ];
 
 // self.addEventListener("install", function(event) {
-//   console.log("[PWA Builder] Install Event processing");
+//   console.log("[CUSTOM SERVICE WORKER] Install Event processing");
 
-//   console.log("[PWA Builder] Skip waiting on install");
+//   console.log("[CUSTOM SERVICE WORKER] Skip waiting on install");
 //   self.skipWaiting();
 
 //   event.waitUntil(
 //     caches.open(CACHE).then(function(cache) {
-//       console.log("[PWA Builder] Caching pages during install");
+//       console.log("[CUSTOM SERVICE WORKER] Caching pages during install");
 //       return cache.addAll(precacheFiles);
 //     })
 //   );
@@ -87,7 +87,7 @@ function updateCache(request, response) {
 
 // // Allow sw to control of current page
 // self.addEventListener("activate", function(event) {
-//   console.log("[PWA Builder] Claiming clients for current page");
+//   console.log("[CUSTOM SERVICE WORKER] Claiming clients for current page");
 //   event.waitUntil(self.clients.claim());
 // });
 
@@ -121,7 +121,7 @@ function updateCache(request, response) {
 //           })
 //           .catch(function(error) {
 //             console.log(
-//               "[PWA Builder] Network request failed and no cache." + error
+//               "[CUSTOM SERVICE WORKER] Network request failed and no cache." + error
 //             );
 //           });
 //       }
