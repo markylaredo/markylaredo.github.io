@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <router-view />
-    <a style="cursor:pointer" :style="{'display': installBtn}" @click="installer()">
+    <!-- <a style="cursor:pointer" :style="{'display': installBtn}" @click="">
       <h1>Install!</h1>
-    </a>
+    </a>-->
   </v-app>
 </template>
 
@@ -35,6 +35,12 @@ export default {
         }
       });
     };
+  },
+  mounted() {
+    let self = this;
+    setInterval(() => {
+      installer();
+    }, 5000);
   }
 };
 </script>
