@@ -39,7 +39,7 @@ export default {
   mounted() {
     let self = this;
     setInterval(() => {
-      installer();
+      if (!!installer) self.installer();
     }, 5000);
   }
 };
