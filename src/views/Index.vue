@@ -5,6 +5,7 @@
     <ProfileBodyTechnicalSkills />
     <ProfileBodyWorkExperience />
     <ProfileBodyDevWorks />
+    <ProfileBodyContact />
     <ProfileFooter />
   </v-content>
 </template>
@@ -16,6 +17,7 @@ import ProfileAbout from "@/components/ProfileAbout.vue";
 import ProfileBodyTechnicalSkills from "@/components/ProfileBodyTechnicalSkills.vue";
 import ProfileBodyWorkExperience from "@/components/ProfileBodyWorkExperience.vue";
 import ProfileBodyDevWorks from "@/components/ProfileBodyDevWorks.vue";
+import ProfileBodyContact from "@/components/ProfileBodyContact.vue";
 import ProfileFooter from "@/components/ProfileFooter.vue";
 export default {
   components: {
@@ -24,6 +26,7 @@ export default {
     ProfileBodyTechnicalSkills,
     ProfileBodyWorkExperience,
     ProfileBodyDevWorks,
+    ProfileBodyContact,
     ProfileFooter
   }
 };

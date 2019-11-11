@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 // This is the service worker with the Cache-first network
 
 const CACHE = "pwabuilder-precache";
@@ -7,14 +6,13 @@ const precacheFiles = [
   /* Add an array of files to precache for your app */
 ];
 
-self.addEventListener("install", function(event) {
+self.addEventListener("install", function (event) {
   console.log("[CUSTOM SERVICE WORKER] Install Event processing");
-
   console.log("[CUSTOM SERVICE WORKER] Skip waiting on install");
   self.skipWaiting();
 
   event.waitUntil(
-    caches.open(CACHE).then(function(cache) {
+    caches.open(CACHE).then(function (cache) {
       console.log("[CUSTOM SERVICE WORKER] Caching pages during install");
       return cache.addAll(precacheFiles);
     })
@@ -22,43 +20,43 @@ self.addEventListener("install", function(event) {
 });
 
 // Allow sw to control of current page
-self.addEventListener("activate", function(event) {
+self.addEventListener("activate", function (event) {
   console.log("[CUSTOM SERVICE WORKER] Claiming clients for current page");
   event.waitUntil(self.clients.claim());
 });
 
 // If any fetch fails, it will look for the request in the cache and serve it from there first
-self.addEventListener("fetch", function(event) {
+self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
     fromCache(event.request).then(
-      function(response) {
+      function (response) {
         // The response was found in the cache so we responde with it and update the entry
 
         // This is where we call the server to get the newest version of the
         // file to use the next time we show view
         event.waitUntil(
-          fetch(event.request).then(function(response) {
+          fetch(event.request).then(function (response) {
             return updateCache(event.request, response);
           })
         );
 
         return response;
       },
-      function() {
+      function () {
         // The response was not found in the cache so we look for it on the server
         return fetch(event.request)
-          .then(function(response) {
+          .then(function (response) {
             // If request was success, add or update it in the cache
             event.waitUntil(updateCache(event.request, response.clone()));
 
             return response;
           })
-          .catch(function(error) {
+          .catch(function (error) {
             console.log(
               "[CUSTOM SERVICE WORKER] Network request failed and no cache." +
-                error
+              error
             );
           });
       }
@@ -70,8 +68,8 @@ function fromCache(request) {
   // Check to see if you have it in the cache
   // Return response
   // If not in the cache, then return
-  return caches.open(CACHE).then(function(cache) {
-    return cache.match(request).then(function(matching) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
       if (!matching || matching.status === 404) {
         return Promise.reject("no-match");
       }
@@ -82,7 +80,7 @@ function fromCache(request) {
 }
 
 function updateCache(request, response) {
-  return caches.open(CACHE).then(function(cache) {
+  return caches.open(CACHE).then(function (cache) {
     return cache.put(request, response);
   });
 }

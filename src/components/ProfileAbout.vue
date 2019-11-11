@@ -2,18 +2,27 @@
   <v-container fluid white>
     <v-layout row justify-center align-center class="mt-n12">
       <v-flex class="text-center mt-n12">
-        <v-avatar :size="150" class="mb-3 elevation-8">
-          <v-img :src="require('@/assets/mark.jpg')" alt="mark anthony">
-            <template v-slot:placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-        </v-avatar>
+        <v-hover :close-delay="260" v-slot:default="{ hover }">
+          <v-avatar
+            :size="150"
+            :class="[hover ? 'elevation-9' : 'elevation-5']"
+          >
+            <v-img :src="require('@/assets/mark.jpg')" alt="mark anthony">
+              <template v-slot:placeholder>
+                <v-row
+                  class="fill-height ma-0 "
+                  align="center"
+                  justify="center"
+                >
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+          </v-avatar>
+        </v-hover>
         <h4 class="title">{{ myName }}</h4>
         <p>{{ myJob }}</p>
       </v-flex>
