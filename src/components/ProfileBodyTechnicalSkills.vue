@@ -1,5 +1,5 @@
 <template>
-  <v-container  light-blue lighten-5>
+  <v-container fluid light-blue lighten-5>
     <v-layout row justify-center justify-space-around>
       <v-flex xs12 md11 sm11 class="text-center">
         <div class="text-center">
