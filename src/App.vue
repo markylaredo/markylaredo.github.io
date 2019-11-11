@@ -1,6 +1,9 @@
 <template>
   <v-app>
     <router-view />
+    <a style="cursor:pointer" :style="{'display': installBtn}" @click="installer()">
+      <h1>Install!</h1>
+    </a>
   </v-app>
 </template>
 

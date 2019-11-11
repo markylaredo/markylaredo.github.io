@@ -11,20 +11,17 @@
               class="mx-4 white--text"
               icon
             >
-              <v-icon size="24px">{{ item.icon }}</v-icon>
+              <v-icon  :color="item.color" size="24px">{{ item.icon }}</v-icon>
             </v-btn>
           </v-card-text>
           <v-divider></v-divider>
           <v-card-text class="white--text">
-            <v-icon>mdi-code-tags</v-icon> code with
-            <v-icon color="red">mdi-cards-heart</v-icon> by <strong class="green--text lighten-3"> Me</strong> &copy; {{ new Date().getFullYear() }}
+            <v-icon>mdi-code-tags</v-icon>&nbsp;code with
+            <v-icon color="red">mdi-cards-heart</v-icon>&nbsp;by
+            <strong class="black--text">Me</strong>
+            &nbsp;&copy; {{ new Date().getFullYear() }}
           </v-card-text>
         </v-card>
-
-        <!-- <v-layout justify-center align-center class="caption pa-3"
-      >Copyright &copy; {{ new Date().getFullYear() }} Mark Anthony Maat Laredo.
-      All Rights Reserved.</v-layout
-        >-->
       </v-flex>
     </v-layout>
   </v-footer>
@@ -35,14 +32,16 @@ export default {
   data: () => ({
     links: [
       {
+        color:"blue",
         icon: "mdi-facebook-box",
         link: "https://www.facebook.com/markylaredo"
       },
       {
+        color:"",
         icon: "mdi-linkedin",
         link: "https://ph.linkedin.com/in/mark-anthony-laredo-a22a74168"
       },
-      { icon: "mdi-github-circle", link: "https://github.com/markylaredo" }
+      { color:"black", icon: "mdi-github-circle", link: "https://github.com/markylaredo" }
     ]
   }),
   methods: {

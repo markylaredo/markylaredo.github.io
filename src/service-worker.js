@@ -1,7 +1,7 @@
 /* eslint-disable */
 // This is the service worker with the Cache-first network
 
-const CACHE = "pwabuilder-precache";
+const CACHE = "mark-anthony-portfolio";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
 ];
