@@ -1,6 +1,6 @@
 <template>
   <v-footer padless>
-    <v-layout xs12 md12 sm12>
+    <v-layout xs11 md11 sm11>
       <v-flex>
         <v-card flat tile class="light-bul text-center light-blue accent-2">
           <v-card-text>

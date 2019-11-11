@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <div>
     <ProfileHeader />
     <ProfileAbout />
     <ProfileBodyTechnicalSkills />
@@ -7,7 +7,7 @@
     <ProfileBodyDevWorks />
     <ProfileBodyContact />
     <ProfileFooter />
-  </v-content>
+  </div>
 </template>
 
 <script>

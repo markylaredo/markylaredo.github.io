@@ -1,7 +1,7 @@
 <template>
   <v-container fluid light-blue accent-1>
     <v-layout row justify-center align-center>
-      <v-flex xs12 md12 sm12 class="text-center">
+      <v-flex xs11 md11 sm11 class="text-center">
         <div class="text-center">
           <h3 class="my-8 headline">Work Experience</h3>
         </div>

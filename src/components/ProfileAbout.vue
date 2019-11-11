@@ -27,7 +27,7 @@
         <p>{{ myJob }}</p>
       </v-flex>
 
-      <v-flex xs12 md12 sm12 class="text-center">
+      <v-flex xs11 md11 sm11 class="text-center">
         <div class="text-center">
           <h3 class="my-8 headline">About Me</h3>
           <!-- <h3 class="headline--text my-8 headline">About Me</h3> -->
