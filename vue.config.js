@@ -1,6 +1,6 @@
 module.exports = {
   pwa: {
-    name: "My App",
+    name: "Mark Anthony Laredo",
     themeColor: "#29B6F6",
     msTileColor: "##039BE5",
     appleMobileWebAppCapable: "yes",
