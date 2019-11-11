@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // This is the service worker with the Cache-first network
 
 const CACHE = "pwabuilder-precache";
@@ -55,7 +57,8 @@ self.addEventListener("fetch", function(event) {
           })
           .catch(function(error) {
             console.log(
-              "[CUSTOM SERVICE WORKER] Network request failed and no cache." + error
+              "[CUSTOM SERVICE WORKER] Network request failed and no cache." +
+                error
             );
           });
       }
@@ -83,9 +86,6 @@ function updateCache(request, response) {
     return cache.put(request, response);
   });
 }
-
-
-
 
 // // This is the "Offline copy of pages" service worker
 

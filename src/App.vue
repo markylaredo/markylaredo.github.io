@@ -26,9 +26,9 @@ export default {
       installPrompt.prompt();
       installPrompt.userChoice.then(result => {
         if (result.outcome === "accepted") {
-          console.log("Install accepted!")
+          console.log("Install accepted!");
         } else {
-          console.log("Install denied!")
+          console.log("Install denied!");
         }
       });
     };
