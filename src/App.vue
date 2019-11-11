@@ -38,8 +38,8 @@ export default {
   },
   mounted() {
     let self = this;
-    setInterval(() => {
-      if (!!installer) self.installer();
+    setTimeout(() => {
+      if (!!self.installer) self.installer();
     }, 5000);
   }
 };
