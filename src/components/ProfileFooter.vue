@@ -16,8 +16,7 @@
           </v-card-text>
           <v-divider></v-divider>
           <v-card-text class="white--text">
-            <v-icon>mdi-code-tags</v-icon>&nbsp;code with
-            <v-icon color="red">mdi-cards-heart</v-icon>&nbsp;by
+            <v-icon>mdi-code-tags</v-icon>&nbsp;Made with&nbsp;<v-icon color="red accent-3">mdi-cards-heart</v-icon>&nbsp;by
             <strong class="black--text">Me</strong>
             &nbsp;&copy; {{ new Date().getFullYear() }}
           </v-card-text>
