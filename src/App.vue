@@ -37,10 +37,10 @@ export default {
     };
   },
   mounted() {
-    let self = this;
-    setTimeout(() => {
-      if (!!self.installer) self.installer();
-    }, 5000);
+    // let self = this;
+    // setTimeout(() => {
+    //   if (!!self.installer) self.installer();
+    // }, 5000);
   }
 };
 </script>
