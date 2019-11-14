@@ -26,9 +26,9 @@
       <v-flex md9 xs9 sm9 justify-center align-center>
         <div class="text-center">
           <br />
+          <p class="subheading text-left">{{ aboutMe1 }}</p>
           <p class="subheading text-left">{{ aboutMe2 }}</p>
           <p class="subheading text-left">{{ aboutMe3 }}</p>
-          <p class="subheading text-left">{{ aboutMe1 }}</p>
           <p class="subheading text-left">{{ aboutMe4 }}</p>
         </div>
       </v-flex>
