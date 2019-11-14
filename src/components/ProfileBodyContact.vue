@@ -7,7 +7,7 @@
         </div>
       </v-flex>
       <!-- programming language and frameworks -->
-      <v-flex md2 xs11 sm11 class="text-center">
+      <v-flex md2 xs11 sm11 mb-5 class="text-center">
         <v-avatar size="62" class="elevation-2 mb-3">
           <span class="white--text headline">
             <a class="no-underline" target="_blank" href="https://m.me/markylaredo">
@@ -19,7 +19,7 @@
           <a class="no-underline" target="_blank" href="https://m.me/markylaredo">Messenger</a>
         </h4>
       </v-flex>
-      <v-flex md3 xs11 sm11 class="text-center">
+      <v-flex md3 xs11 sm11 mb-5  class="text-center">
         <v-avatar size="62" class="elevation-2 mb-3">
           <span class="white--text headline">
             <a class="no-underline" target="_blank" href="mailto:markanthonylaredo@gmail.com">
