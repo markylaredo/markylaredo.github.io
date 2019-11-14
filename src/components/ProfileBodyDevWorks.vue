@@ -91,19 +91,19 @@ export default {
           writtenIn: "C#",
           interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
         },
-        {
-          images: [
-            "gorgo_landing_page.png",
-            "gorgo_registration.png",
-            "gorgo_talent_list.png",
-            "gorgo_talent_info.png"
-          ],
-          system: "GORGO",
-          description: "GORGO Talent Assistant",
-          platform: "ASP.NET MVC",
-          writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
-        },
+        // {
+        //   images: [
+        //     "gorgo_landing_page.png",
+        //     "gorgo_registration.png",
+        //     "gorgo_talent_list.png",
+        //     "gorgo_talent_info.png"
+        //   ],
+        //   system: "GORGO",
+        //   description: "GORGO Talent Assistant",
+        //   platform: "ASP.NET MVC",
+        //   writtenIn: "C#",
+        //   interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
+        // },
         {
           images: [
             "irc_bulk_sms_dashboard.jpg",
