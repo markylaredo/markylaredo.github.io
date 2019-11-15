@@ -44,7 +44,7 @@ export default {
       aboutMe1:
         "Hi there, my name is Mark Anthony Laredo. I'm a Software Engineer based in Occidental Mindoro, Philippines specializing in building and designing exceptional, high-quality websites and applications. I’ve been a professional Software Engineer with a Bachelors Degree for more than 5 years. ",
       aboutMe2:
-        "I've worked with a wide variety of programming languages such as C#, .Net Core, VB.Net. I believe that computing is affecting the lives of everyone on the planet and I think is important to provide better tools/software program for people to access the potential offered by computer.",
+        "I've worked with a wide variety of programming languages and frameworks such as C#, .Net Core, VB.Net. I believe that computing is affecting the lives of everyone on the planet and I think is important to provide better tools/software program for people to access the potential offered by computer.",
       aboutMe3:
         "I am a goal-oriented web developer with a strong commitment in collaboration and solutions-oriented problem solving. I like building new stuff and work with other people – nothing really interesting is ever built alone! For me it is great to keep working on different skills, to meet new interesting people and to contribute to make them happy.",
       aboutMe4:
