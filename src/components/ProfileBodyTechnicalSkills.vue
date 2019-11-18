@@ -123,13 +123,7 @@ export default {
           icon: "NET_Core_Logo.svg",
           lang: ".Net Core",
           link: "https://en.wikipedia.org/wiki/.NET_Core"
-        },
-        {
-          icon: "microsoft-net-logo.png",
-          lang: "Microsoft .NET Framework",
-          link:
-            "https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity"
-        },
+        },       
         {
           icon: "NET_Core_Logo (1).svg",
           lang: "Identity Framework",
