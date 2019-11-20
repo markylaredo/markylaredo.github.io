@@ -7,7 +7,6 @@
         color="info"
         v-model="newUpdate"
         :timeout="0"
-        class="mb-12"
       >
         {{ snackbarNewUpdateMessage }}
         <v-btn white--text text @click="refreshPage">Refresh</v-btn>
@@ -23,7 +22,6 @@
         color="success"
         v-model="offlineUse"
         :timeout="0"
-        class="mt-5"
       >
         {{ snackbarOfflineMessage }}
         <v-btn white--text text @click="offlineUse = false">

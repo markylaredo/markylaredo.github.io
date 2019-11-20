@@ -8,11 +8,11 @@ const precacheFiles = [
 self.addEventListener("install", function (event) {
   // self.skipWaiting();
 
-  // event.waitUntil(
-  //   caches.open(CACHE).then(function (cache) {
-  //     return cache.addAll(precacheFiles);
-  //   })
-  // );
+  event.waitUntil(
+    caches.open(CACHE).then(function (cache) {
+      return cache.addAll(precacheFiles);
+    })
+  );
 });
 
 // Allow sw to control of current page
