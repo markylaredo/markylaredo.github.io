@@ -11,11 +11,17 @@
         <v-flex xs12 md11 sm12>
           <v-slide-group show-arrows :center-active="true" dark>
             <v-slide-item
-              v-for="(work,i) in works"
-              :key="work+i"
+              v-for="(work, i) in works"
+              :key="work + i"
               v-slot:default="{ active, toggle }"
             >
-              <v-card light class="ma-4" :elevation="8" width="300" @click="toggle">
+              <v-card
+                light
+                class="ma-4"
+                :elevation="8"
+                width="300"
+                @click="toggle"
+              >
                 <v-carousel
                   delimiter-icon="mdi-minus"
                   cycle
@@ -25,10 +31,21 @@
                   :interval="work.interval"
                 >
                   <v-carousel-item v-for="img in work.images" :key="img">
-                    <v-img max-height="500" :src="require(`@/assets/myWorks/${img}`)" :alt="img">
+                    <v-img
+                      max-height="500"
+                      :src="require(`@/assets/myWorks/${img}`)"
+                      :alt="img"
+                    >
                       <template v-slot:placeholder>
-                        <v-row class="fill-height ma-0" align="center" justify="center">
-                          <v-progress-circular indeterminate color="light-blue accent-2 "></v-progress-circular>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="light-blue accent-2 "
+                          ></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
@@ -38,11 +55,11 @@
                 <v-divider></v-divider>
                 <v-card-text>
                   <h4 class="gray--text">System</h4>
-                  <p class="black--text text-wrap">{{work.description}}</p>
+                  <p class="black--text text-wrap">{{ work.description }}</p>
                   <h4 class="gray--text">Platform</h4>
-                  <p class="black--text">{{work.platform}}</p>
+                  <p class="black--text">{{ work.platform }}</p>
                   <h4 class="gray--text">Written in</h4>
-                  <p class="black--text">{{work.writtenIn}}</p>
+                  <p class="black--text">{{ work.writtenIn }}</p>
                 </v-card-text>
               </v-card>
             </v-slide-item>

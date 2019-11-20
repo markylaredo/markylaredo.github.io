@@ -10,25 +10,43 @@
       <v-flex md2 xs11 sm11 mb-5 class="text-center">
         <v-avatar size="62" class="elevation-2 mb-3">
           <span class="white--text headline">
-            <a class="no-underline" target="_blank" href="https://m.me/markylaredo">
+            <a
+              class="no-underline"
+              target="_blank"
+              href="https://m.me/markylaredo"
+            >
               <v-icon color="blue" x-large>mdi-facebook-messenger</v-icon>
             </a>
           </span>
         </v-avatar>
         <h4>
-          <a class="no-underline" target="_blank" href="https://m.me/markylaredo">Messenger</a>
+          <a
+            class="no-underline"
+            target="_blank"
+            href="https://m.me/markylaredo"
+            >Messenger</a
+          >
         </h4>
       </v-flex>
-      <v-flex md3 xs11 sm11 mb-5  class="text-center">
+      <v-flex md3 xs11 sm11 mb-5 class="text-center">
         <v-avatar size="62" class="elevation-2 mb-3">
           <span class="white--text headline">
-            <a class="no-underline" target="_blank" href="mailto:markanthonylaredo@gmail.com">
+            <a
+              class="no-underline"
+              target="_blank"
+              href="mailto:markanthonylaredo@gmail.com"
+            >
               <v-icon color="#6001D2" x-large>mdi-email</v-icon>
             </a>
           </span>
         </v-avatar>
         <h4>
-          <a class="no-underline" target="_blank" href="mailto:markanthonylaredo@gmail.com">markanthonylaredo@gmail.com</a>
+          <a
+            class="no-underline"
+            target="_blank"
+            href="mailto:markanthonylaredo@gmail.com"
+            >markanthonylaredo@gmail.com</a
+          >
         </h4>
       </v-flex>
       <v-flex md2 xs11 sm11 class="text-center">

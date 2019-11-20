@@ -11,12 +11,15 @@
               class="mx-4 white--text"
               icon
             >
-              <v-icon  :color="item.color" size="24px">{{ item.icon }}</v-icon>
+              <v-icon :color="item.color" size="24px">{{ item.icon }}</v-icon>
             </v-btn>
           </v-card-text>
           <v-divider></v-divider>
           <v-card-text class="white--text">
-            <v-icon>mdi-code-tags</v-icon>&nbsp;Made with&nbsp;<v-icon color="red accent-3">mdi-cards-heart</v-icon>&nbsp;by
+            <v-icon>mdi-code-tags</v-icon>&nbsp;Made with&nbsp;<v-icon
+              color="red accent-3"
+              >mdi-cards-heart</v-icon
+            >&nbsp;by
             <strong class="black--text">Me</strong>
             &nbsp;&copy; {{ new Date().getFullYear() }}
           </v-card-text>
@@ -31,16 +34,20 @@ export default {
   data: () => ({
     links: [
       {
-        color:"blue",
+        color: "blue",
         icon: "mdi-facebook-box",
         link: "https://www.facebook.com/markylaredo"
       },
       {
-        color:"",
+        color: "",
         icon: "mdi-linkedin",
         link: "https://ph.linkedin.com/in/mark-anthony-laredo-a22a74168"
       },
-      { color:"black", icon: "mdi-github-circle", link: "https://github.com/markylaredo" }
+      {
+        color: "black",
+        icon: "mdi-github-circle",
+        link: "https://github.com/markylaredo"
+      }
     ]
   }),
   methods: {

@@ -3,11 +3,17 @@
     <v-layout row justify-center align-center class="mt-n12">
       <v-flex class="text-center mt-n12">
         <v-hover :close-delay="260" v-slot:default="{ hover }">
-          <v-avatar :size="150" :class="[hover ? 'elevation-9' : 'elevation-5']">
+          <v-avatar
+            :size="150"
+            :class="[hover ? 'elevation-9' : 'elevation-5']"
+          >
             <v-img :src="require('@/assets/mark.jpg')" alt="mark anthony">
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular indeterminate color="light-blue accent-2"></v-progress-circular>
+                  <v-progress-circular
+                    indeterminate
+                    color="light-blue accent-2"
+                  ></v-progress-circular>
                 </v-row>
               </template>
             </v-img>
@@ -39,6 +45,7 @@
 export default {
   data: function() {
     return {
+      updateExists: false,
       myName: "Mark Anthony Maat Laredo",
       myJob: "Software Engineer",
       aboutMe1:
