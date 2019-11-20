@@ -1,7 +1,5 @@
 /* eslint-disable */
 // This is the service worker with the Cache-first network
-import vue from "vue"
-
 const CACHE = "mark-anthony-portfolio";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
