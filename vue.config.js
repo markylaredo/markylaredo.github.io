@@ -8,7 +8,6 @@ module.exports = {
     workboxPluginMode: "InjectManifest",
     workboxOptions: {
       swSrc: "src/service-worker.js",
-      skipWaiting: true
     }
   }
 };
