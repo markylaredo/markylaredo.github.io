@@ -58,7 +58,7 @@ export default {
       //   return;
       // }
       // this.registration.waiting.postMessage("skipWaiting");
-      // console.log(`${this.registration}`);
+      console.log(`${this.registration}`);
       window.location.reload();
     }
   },
