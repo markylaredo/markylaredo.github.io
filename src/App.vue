@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     showRefreshUI(e) {
-      console.log(e);
+    
       //get the event of service worker e.details
       this.registration = e.detail;
       this.newUpdate = true;
