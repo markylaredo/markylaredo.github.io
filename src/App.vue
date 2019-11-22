@@ -1,13 +1,7 @@
 <template>
   <v-app>
     <v-slide-x-reverse-transition class="transition-swing" mode="out-in">
-      <v-snackbar
-        bottom
-        right
-        color="info"
-        v-model="newUpdate"
-        :timeout="0"
-      >
+      <v-snackbar bottom right color="info" v-model="newUpdate" :timeout="0">
         {{ snackbarNewUpdateMessage }}
         <v-btn white--text text @click="refreshPage">Refresh</v-btn>
         <v-btn white--text text @click="newUpdate = false">
@@ -16,13 +10,7 @@
       </v-snackbar>
     </v-slide-x-reverse-transition>
     <v-slide-y-transition class="transition-swing" mode="out-in">
-      <v-snackbar
-        top
-        center
-        color="success"
-        v-model="offlineUse"
-        :timeout="0"
-      >
+      <v-snackbar top center color="success" v-model="offlineUse" :timeout="0">
         {{ snackbarOfflineMessage }}
         <v-btn white--text text @click="offlineUse = false">
           <v-icon>mdi-close</v-icon>
@@ -49,11 +37,12 @@ export default {
   },
   methods: {
     showRefreshUI(e) {
-       console.log(e)
+      console.log(e);
       //get the event of service worker e.details
       this.registration = e.detail;
       this.newUpdate = true;
-      this.snackbarNewUpdateMessage = "🙌🏻 Hooray!! New version is available. 🥰";
+      this.snackbarNewUpdateMessage =
+        "🙌🏻 Hooray!! New version is available. 🥰";
     },
     showOfflineUse(e) {
       // console.log(e)
@@ -69,6 +58,7 @@ export default {
         return;
       }
       this.registration.waiting.postMessage("skipWaiting");
+      console.log(`${this.registration}`);
     }
   },
   created() {
