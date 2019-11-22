@@ -54,51 +54,22 @@ export default {
       // Handle a user tap on the update app button.
       this.newUpdate = false;
       // Protect against missing registration.waiting.
-      if (!this.registration || !this.registration.waiting) {
-        return;
-      }
-      this.registration.waiting.postMessage("skipWaiting");
-      console.log(`${this.registration}`);
+      // if (!this.registration || !this.registration.waiting) {
+      //   return;
+      // }
+      // this.registration.waiting.postMessage("skipWaiting");
+      // console.log(`${this.registration}`);
+      window.location.reload();
     }
   },
   created() {
-    // Listen for swUpdated event and display refresh snackbar as required.
+    // Listen for swUpdated event and display refresh snackbar.
     document.addEventListener("swUpdated", this.showRefreshUI, { once: true });
     // Listen for swOfflineCached event and display snackbar offline use
     document.addEventListener("swOfflineCached", this.showOfflineUse, {
       once: true
     });
-    // // Refresh all open app tabs when a new service worker is installed.
-    // navigator.serviceWorker.addEventListener("controllerchange", () => {
-    //   if (!this.refreshing) return;
-    //   this.refreshing = true;
-    //   window.location.reload();
-    // });
-
-    // let installPrompt;
-    // window.addEventListener("beforeinstallprompt", e => {
-    //   e.preventDefault();
-    //   installPrompt = e;
-    //   this.installBtn = "block";
-    // });
-
-    // this.installer = () => {
-    //   this.installBtn = "none";
-    //   installPrompt.prompt();
-    //   installPrompt.userChoice.then(result => {
-    //     if (result.outcome === "accepted") {
-    //       // console.log("Install accepted!");
-    //     } else {
-    //       // console.log("Install denied!");
-    //     }
-    //   });
-    // };
-  },
-  mounted() {
-    // let self = this;
-    // setTimeout(() => {
-    //   if (!!self.installer) self.installer();
-    // }, 5000);
-  }
+    
+  } 
 };
 </script>

@@ -28,8 +28,6 @@ if (process.env.NODE_ENV === "production") {
       // console.log("New content is downloading.");
     },
     updated(registration) {
-      console.log("New content is available; please refresh.");
-    
       document.dispatchEvent(
         new CustomEvent("swUpdated", {
           detail: registration
