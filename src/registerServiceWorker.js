@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
       console.log("Content has been cached for offline use.");
       document.dispatchEvent(
         new CustomEvent("swOfflineCached", {
-          offlineCached: true
+          detail: true
         })
       );
     },

@@ -52,14 +52,14 @@ export default {
       //get the event of service worker e.details
       this.registration = e.detail;
       this.newUpdate = true;
-      this.snackbarNewUpdateMessage = "🙌🏻🥰 Hooray!! New version is available.";
+      this.snackbarNewUpdateMessage = "🙌🏻 Hooray!! New version is available. 🥰";
     },
     showOfflineUse(e) {
-      this.offlineUse = e.offlineCached;
+      console.log(e)
+      this.offlineUse = e.detail;
       this.snackbarOfflineMessage =
         "🙌🏻 Hooray!! You can now visit this page without internet connection. 🥰";
     },
-
     refreshPage() {
       // Handle a user tap on the update app button.
       this.newUpdate = false;
@@ -77,12 +77,12 @@ export default {
     document.addEventListener("swOfflineCached", this.showOfflineUse, {
       once: true
     });
-    // Refresh all open app tabs when a new service worker is installed.
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (this.refreshing) return;
-      this.refreshing = true;
-      window.location.reload();
-    });
+    // // Refresh all open app tabs when a new service worker is installed.
+    // navigator.serviceWorker.addEventListener("controllerchange", () => {
+    //   if (!this.refreshing) return;
+    //   this.refreshing = true;
+    //   window.location.reload();
+    // });
 
     // let installPrompt;
     // window.addEventListener("beforeinstallprompt", e => {
