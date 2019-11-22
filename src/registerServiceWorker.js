@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
       }, 1000 * 60 * 60); // e.g. hourly checks
     },
     cached() {
-      console.log("Content has been cached for offline use.");
+      // console.log("Content has been cached for offline use.");
       document.dispatchEvent(
         new CustomEvent("swOfflineCached", {
           detail: true

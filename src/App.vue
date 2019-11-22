@@ -54,7 +54,8 @@ export default {
       this.newUpdate = true;
       this.snackbarNewUpdateMessage = "🙌🏻 Hooray!! New version is available. 🥰";
     },
-    showOfflineUse(e) {      
+    showOfflineUse(e) {
+      // console.log(e)
       this.offlineUse = e.detail;
       this.snackbarOfflineMessage =
         "🙌🏻 Hooray!! You can now visit this page without internet connection. 🥰";
