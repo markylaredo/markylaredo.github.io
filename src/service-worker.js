@@ -3,6 +3,7 @@
 const CACHE = "mark-anthony-portfolio";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
+  "/assets/keep_calm_and_code.jpg"
 ];
 
 self.addEventListener("install", function (event) {
