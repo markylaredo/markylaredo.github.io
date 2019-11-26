@@ -1,4 +1,5 @@
-# mark-anthony-laredo
+# Mark Anthony Laredo
+ My personal portfolio made with vue.js and vuetify.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87a5be9e-bf1c-43e3-bdb4-6a64fea349fd/deploy-status)](https://app.netlify.com/sites/marklaredo/deploys)
 
