@@ -2,6 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87a5be9e-bf1c-43e3-bdb4-6a64fea349fd/deploy-status)](https://app.netlify.com/sites/marklaredo/deploys)
 
+## DEMO
+
+[https://marklaredo.netlify.com](https://markanthonylaredo.me)
 
 # Project setup
 ```
