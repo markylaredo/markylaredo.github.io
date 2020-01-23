@@ -63,7 +63,7 @@
                   {{ tool.lang }}
                 </v-chip>
               </template>
-              <span>View More info</span>
+              <span>Click to view More info</span>
             </v-tooltip>
           </v-chip-group>
         </div>
