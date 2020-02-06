@@ -37,7 +37,6 @@ export default {
   },
   methods: {
     showRefreshUI(e) {
-    
       //get the event of service worker e.details
       this.registration = e.detail;
       this.newUpdate = true;
@@ -69,7 +68,6 @@ export default {
     document.addEventListener("swOfflineCached", this.showOfflineUse, {
       once: true
     });
-    
-  } 
+  }
 };
 </script>
