@@ -85,7 +85,7 @@ export default {
             "Innovative Realtime Card System with SMS Notification and Parent Portal",
           platform: "ASP.NET Web Forms",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
+          interval: Math.floor(Math.random() * (6000 - 5800) * 10)
         },
         {
           images: ["oms_login.jpg", "oms_dashboard.jpg", "oms_insights.jpg"],
@@ -93,7 +93,7 @@ export default {
           description: "OMS Multipurpose Cooperative Loan Management System",
           platform: "VB.Net - Forms",
           writtenIn: "Visual Basic .Net",
-          interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
+          interval: Math.floor(Math.random() * (6000 - 5800) * 10)
         },
         {
           images: [
@@ -106,7 +106,7 @@ export default {
             "Human Resource and Payroll System with Face Recognition",
           platform: "ASP.NET MVC",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
+          interval: Math.floor(Math.random() * (6000 - 5800) * 10)
         },
         // {
         //   images: [
@@ -131,7 +131,7 @@ export default {
           description: "IRC Bulk SMS Announcement",
           platform: "Windows Forms",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
+          interval: Math.floor(Math.random() * (6000 - 5800) * 10)
         }
       ]
     };
