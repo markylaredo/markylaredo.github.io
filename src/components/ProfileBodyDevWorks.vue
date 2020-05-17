@@ -78,14 +78,14 @@ export default {
           images: [
             "irc_dashboard.png",
             "irc_login.png",
-            "irc_student_Info.png"
+            "irc_student_Info.png",
           ],
           system: "IRC System",
           description:
             "Innovative Realtime Card System with SMS Notification and Parent Portal",
           platform: "ASP.NET Web Forms",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) * 20)
+          interval: Math.floor((Math.random() * 1000) +5000),
         },
         {
           images: ["oms_login.jpg", "oms_dashboard.jpg", "oms_insights.jpg"],
@@ -93,20 +93,20 @@ export default {
           description: "OMS Multipurpose Cooperative Loan Management System",
           platform: "VB.Net - Forms",
           writtenIn: "Visual Basic .Net",
-          interval: Math.floor(Math.random() * (6000 - 5800) * 20)
+          interval: Math.floor((Math.random() * 1000) +5000),
         },
         {
           images: [
             "stl_login.png",
             "stl_dashboard.png",
-            "stl_employee_info.png"
+            "stl_employee_info.png",
           ],
           system: "HRP System",
           description:
             "Human Resource and Payroll System with Face Recognition",
           platform: "ASP.NET MVC",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) * 20)
+          interval: Math.floor((Math.random() * 1000) +5000),
         },
         // {
         //   images: [
@@ -125,16 +125,16 @@ export default {
           images: [
             "irc_bulk_sms_dashboard.jpg",
             "irc_bulk_sms.jpg",
-            "irc_bulk_sms_log_stats.jpg"
+            "irc_bulk_sms_log_stats.jpg",
           ],
           system: "IRC Bulk SMS",
           description: "IRC Bulk SMS Announcement",
           platform: "Windows Forms",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * (6000 - 5800) * 20)
-        }
-      ]
+          interval: Math.floor((Math.random() * 1000) +5000),
+        },
+      ],
     };
-  }
+  },
 };
 </script>
