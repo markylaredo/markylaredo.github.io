@@ -5,7 +5,7 @@
 
 ## DEMO
 
-[https://marklaredo.netlify.com](https://markanthonylaredo.me)
+[https://marklaredo.netlify.com](https://markanthonylaredo.ml)
 
 # Project setup
 ```
