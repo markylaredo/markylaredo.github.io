@@ -2,3 +2,9 @@ This is a Brave Rewards publisher verification file.
 
 Domain: markanthonylaredo.me
 Token: 09081f10d5dba607482c9eb8d03b84c4bf77c01ee54d506298bb91a17508d4eb
+
+
+This is a Brave Rewards publisher verification file.
+
+Domain: markanthonylaredo.ml
+Token: 9deb98eae72bde4472c7189452a5f82500143ac85259a8fe82df2c9a9fdc2b1a
