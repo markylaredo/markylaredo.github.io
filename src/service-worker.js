@@ -3,11 +3,11 @@
 const CACHE = "mark-anthony-portfolio";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  "./logo.png",
-  "./img/*",
-  "./css/*",
-  "./js/*",
-  "./offline.html",
+  // "./logo.png",
+  // "./img/*",
+  // "./css/*",
+  // "./js/*",
+  "/offline.html",
 ];
 
 self.addEventListener("install", function (event) {
