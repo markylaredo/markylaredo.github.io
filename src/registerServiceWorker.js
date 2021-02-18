@@ -44,10 +44,11 @@ if (process.env.NODE_ENV === "production") {
     },
   });
   // /* eslint-disable */
-  let refreshing;
-  navigator.serviceWorker.addEventListener("controllerchange", (e) => {
-    if (refreshing) return;
-    window.location.reload();
-    refreshing = true;
-  });
+  // let refreshing;
+  // navigator.serviceWorker.addEventListener("controllerchange", (e) => {
+  //   if (refreshing) return;
+  //   window.location.reload();
+  //   refreshing = true;
+  // });
+  
 }
