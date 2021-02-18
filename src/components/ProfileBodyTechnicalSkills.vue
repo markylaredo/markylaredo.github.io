@@ -1,6 +1,6 @@
 <template>
   <v-container fluid light-blue lighten-5>
-    <v-layout row justify-center justify-space-around>
+    <v-layout row justify-center justify-space-around mb-5>
       <v-flex xs12 md11 sm11 class="text-center">
         <div class="text-center">
           <h3 class="mt-8 headline">Technical Skills</h3>

@@ -3,8 +3,7 @@
     <v-layout xs11 md11 sm11>
       <v-flex>
         <v-card flat tile class=" text-center light-blue accent-2">
-          <v-card-text>
- 
+          <v-card-text>          
             <v-btn
               @click="openLink(item.link)"
               v-for="item in links"
@@ -55,6 +54,7 @@ export default {
     openLink(url) {
       window.open(url, "_blank");
     }
-  }
+  },
+  
 };
 </script>

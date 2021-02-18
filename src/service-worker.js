@@ -3,6 +3,9 @@
 const CACHE = "mark-anthony-portfolio";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
+  "/logo.png",
+  "/assets/*",
+  "/offline.html",
 ];
 
 self.addEventListener("install", function (event) {
@@ -49,8 +52,7 @@ self.addEventListener("fetch", function (event) {
           })
           .catch(function (error) {
             console.log(
-              "[SERVICE WORKER] Network request failed and no cache." +
-              error
+              "[SERVICE WORKER] Network request failed and no cache." + error
             );
           });
       }

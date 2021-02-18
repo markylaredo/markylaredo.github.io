@@ -3,7 +3,7 @@
     <ProfileHeader />
     <ProfileAbout />
     <ProfileBodyTechnicalSkills />
-    <ProfileBodyWorkExperience />
+    <!-- <ProfileBodyWorkExperience /> -->
     <ProfileBodyDevWorks />
     <ProfileBodyContact />
     <ProfileFooter />
@@ -15,7 +15,7 @@
 import ProfileHeader from "@/components/ProfileHeader.vue";
 import ProfileAbout from "@/components/ProfileAbout.vue";
 import ProfileBodyTechnicalSkills from "@/components/ProfileBodyTechnicalSkills.vue";
-import ProfileBodyWorkExperience from "@/components/ProfileBodyWorkExperience.vue";
+// import ProfileBodyWorkExperience from "@/components/ProfileBodyWorkExperience.vue";
 import ProfileBodyDevWorks from "@/components/ProfileBodyDevWorks.vue";
 import ProfileBodyContact from "@/components/ProfileBodyContact.vue";
 import ProfileFooter from "@/components/ProfileFooter.vue";
@@ -24,7 +24,7 @@ export default {
     ProfileHeader,
     ProfileAbout,
     ProfileBodyTechnicalSkills,
-    ProfileBodyWorkExperience,
+    // ProfileBodyWorkExperience,
     ProfileBodyDevWorks,
     ProfileBodyContact,
     ProfileFooter
