@@ -27,7 +27,7 @@ export default {
     // ProfileBodyWorkExperience,
     ProfileBodyDevWorks,
     ProfileBodyContact,
-    ProfileFooter
-  }
+    ProfileFooter,
+  },
 };
 </script>

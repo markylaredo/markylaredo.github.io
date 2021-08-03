@@ -32,7 +32,7 @@ export default {
       snackbarNewUpdateMessage: null,
       snackbarOfflineMessage: null,
       newUpdate: false,
-      offlineUse: false
+      offlineUse: false,
     };
   },
   methods: {
@@ -59,15 +59,15 @@ export default {
       this.registration.waiting.postMessage("skipWaiting");
       // console.log(`${this.registration}`);
       window.location.reload();
-    }
+    },
   },
   created() {
     // Listen for swUpdated event and display refresh snackbar.
     document.addEventListener("swUpdated", this.showRefreshUI, { once: true });
     // Listen for swOfflineCached event and display snackbar offline use
     document.addEventListener("swOfflineCached", this.showOfflineUse, {
-      once: true
+      once: true,
     });
-  }
+  },
 };
 </script>

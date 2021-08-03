@@ -2,7 +2,7 @@
   <v-footer padless>
     <v-layout xs11 md11 sm11>
       <v-flex>
-        <v-card flat tile class=" text-center light-blue accent-2">
+        <v-card flat tile class="text-center light-blue accent-2">
           <v-card-text>
             <v-btn
               @click="openLink(item.link)"
@@ -36,24 +36,24 @@ export default {
       {
         color: "blue",
         icon: "mdi-facebook-box",
-        link: "https://www.facebook.com/markylaredo"
+        link: "https://www.facebook.com/markylaredo",
       },
       {
         color: "",
         icon: "mdi-linkedin",
-        link: "https://ph.linkedin.com/in/mark-anthony-laredo-a22a74168"
+        link: "https://ph.linkedin.com/in/mark-anthony-laredo-a22a74168",
       },
       {
         color: "black",
         icon: "mdi-github-face",
-        link: "https://github.com/markylaredo"
-      }
-    ]
+        link: "https://github.com/markylaredo",
+      },
+    ],
   }),
   methods: {
     openLink(url) {
       window.open(url, "_blank");
-    }
-  }
+    },
+  },
 };
 </script>

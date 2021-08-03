@@ -19,8 +19,8 @@ export default {
     return {
       message: "Hi, I'm Mark.",
       description:
-        "Independent Full-stack software & web developer specializing in .Net Framework."
+        "Independent Full-stack software & web developer specializing in .Net Framework.",
     };
-  }
+  },
 };
 </script>

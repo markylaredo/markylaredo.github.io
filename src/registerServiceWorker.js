@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
       // console.log("Content has been cached for offline use.");
       document.dispatchEvent(
         new CustomEvent("swOfflineCached", {
-          detail: true
+          detail: true,
         })
       );
     },
@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === "production") {
     updated(registration) {
       document.dispatchEvent(
         new CustomEvent("swUpdated", {
-          detail: registration
+          detail: registration,
         })
       );
     },
@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === "production") {
     },
     error(error) {
       console.error("Error during service worker registration:", error);
-    }
+    },
   });
   // /* eslint-disable */
   // let refreshing;

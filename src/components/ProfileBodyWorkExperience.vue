@@ -47,7 +47,7 @@ export default {
         year: "08/2014 - 10/2014",
         work: "Technical Support Intern",
         where: "San Jose Police Station (SJMPS)",
-        addr: "San Jose, Occidental Mindoro"
+        addr: "San Jose, Occidental Mindoro",
       },
       {
         color: "blue",
@@ -55,7 +55,7 @@ export default {
         year: "04/03/2016 - 03/02/2018",
         work: "Software Engineer",
         where: "Jade Phone English Tutorial Service",
-        addr: "Rm.201-A Culmat Bldg. E.Rodriguez Sr. Ave. Brgy. Mariana 1112"
+        addr: "Rm.201-A Culmat Bldg. E.Rodriguez Sr. Ave. Brgy. Mariana 1112",
       },
       {
         color: "blue",
@@ -63,10 +63,9 @@ export default {
         year: "03/05/2018 - 03/20/2019",
         work: "Software Engineer",
         where: "Binary Data Frame Corporation",
-        addr:
-          "2nd Floor San Lorenzo Ruiz Building, Gloria Diaz Street, BF Resort Dr, Village, Las Pinas, 1740 Metro Manila"
-      }
-    ]
-  })
+        addr: "2nd Floor San Lorenzo Ruiz Building, Gloria Diaz Street, BF Resort Dr, Village, Las Pinas, 1740 Metro Manila",
+      },
+    ],
+  }),
 };
 </script>

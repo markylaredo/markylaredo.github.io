@@ -43,11 +43,11 @@
 </template>
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       updateExists: false,
       myName: "Mark Anthony Maat Laredo",
-      myJob: "Software Engineer",      
+      myJob: "Software Engineer",
       aboutMe2:
         "I've worked with a wide variety of programming languages and frameworks such as C#, .Net Core, VB.Net. I believe that computing is affecting the lives of everyone on the planet and I think it is important to provide better tools/software program for people to access the potential offered by computer.",
       aboutMe3:
@@ -56,14 +56,15 @@ export default {
         "I know that finding technical help is not the easiest thing, especially regarding something as specialized as language engineering. Hopefully I can be the right person to design and implement your projects. If not I will try my best to give you the right directions and help you find who can help you.",
       alignment: "center",
       dense: false,
-      justify: "center"
+      justify: "center",
     };
   },
   computed: {
     aboutMe() {
-      return `Hi there, my name is Mark Anthony Laredo. I'm a Software Engineer based in Occidental Mindoro, Philippines specializing in building and designing exceptional, high-quality websites and applications. I’ve been a professional Software Engineer with a Bachelors Degree for more than ${new Date().getFullYear() -
-        2015} years.`;
-    }
-  }
+      return `Hi there, my name is Mark Anthony Laredo. I'm a Software Engineer based in Occidental Mindoro, Philippines specializing in building and designing exceptional, high-quality websites and applications. I’ve been a professional Software Engineer with a Bachelors Degree for more than ${
+        new Date().getFullYear() - 2015
+      } years.`;
+    },
+  },
 };
 </script>

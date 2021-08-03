@@ -7,7 +7,9 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: "#0288D1",
     workboxPluginMode: "InjectManifest",
     workboxOptions: {
-      swSrc: "src/service-worker.js"
-    }
-  }
+      swSrc: "src/service-worker.js",
+    },
+  },
+
+  lintOnSave: false,
 };
