@@ -8,7 +8,7 @@
               @click="openLink(item.link)"
               v-for="item in links"
               :key="item.icon"
-              class="mx-4 white--text"
+              class="mx-1 white--text"
               icon
             >
               <v-icon :color="item.color" size="24px">{{ item.icon }}</v-icon>
@@ -16,10 +16,11 @@
           </v-card-text>
           <v-divider></v-divider>
           <v-card-text class="white--text">
-            <v-icon>mdi-code-tags</v-icon>&nbsp;Made with&nbsp;
-            <v-icon color="red accent-3">mdi-cards-heart</v-icon>&nbsp;and
-            &nbsp;<v-icon color="grey darken-4">mdi-coffee</v-icon>
-            &nbsp;&copy; {{ new Date().getFullYear() }}
+            
+            <v-icon>mdi-code-tags</v-icon>&nbsp;with&nbsp;
+            <v-icon color="red accent-3">mdi-cards-heart</v-icon>&nbsp;and fueled by
+            &nbsp;<v-icon color="brown darken-2">mdi-tea</v-icon>
+            &nbsp;&copy; {{ new Date().getFullYear() }} 🌟
           </v-card-text>
         </v-card>
       </v-flex>
