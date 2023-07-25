@@ -47,15 +47,14 @@
         <div class="text-center">
           <v-chip-group column>
             <v-tooltip bottom v-for="tool in tools" :key="tool.lang">
-              <template v-slot:activator="{ on }">
+              <template #activator="{ on }">
                 <v-chip
                   color="white"
                   pill
-                  icon
                   v-on="on"
                   @click="redirect(tool.link)"
                 >
-                  <v-avatar color="teal lighten-4" left>
+                  <v-avatar :size="12" color="teal lighten-4" left>
                     <v-img
                       :src="require(`@/assets/icons/${tool.icon}`)"
                     ></v-img>
@@ -127,7 +126,8 @@ export default {
         {
           icon: "NET_Core_Logo (1).svg",
           lang: "Identity Framework",
-          link: "https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity",
+          link:
+            "https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity",
         },
         {
           icon: "sql.svg",
@@ -187,6 +187,11 @@ export default {
           link: "https://visualstudio.microsoft.com/vs/",
         },
         {
+          icon: "docker.svg",
+          lang: "Docker",
+          link: "https://www.docker.com/resources/what-container/",
+        },
+        {
           icon: "VsCode.png",
           lang: "Visual Studio Code",
           link: "https://visualstudio.microsoft.com/vs/",
@@ -196,6 +201,7 @@ export default {
         "Format Computer",
         "Configure Computer Network",
         "Computer Hardware troubleshoot",
+        "Piso WiFi Builder",
       ],
     };
   },
