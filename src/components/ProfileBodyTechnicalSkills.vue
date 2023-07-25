@@ -183,7 +183,7 @@ export default {
         },
         {
           icon: "vs2019.svg",
-          lang: "Visual Studio 2019",
+          lang: "Visual Studio 2022",
           link: "https://visualstudio.microsoft.com/vs/",
         },
         {
