@@ -198,9 +198,9 @@ export default {
         },
       ],
       otherStuffs: [
-        "Format Computer",
-        "Configure Computer Network",
-        "Computer Hardware troubleshoot",
+        "Laptop/Computer Re-program",
+        "Computer Networking",
+        "Laptop/Computer Hardware troubleshoot",
         "Piso WiFi Builder",
       ],
     };
