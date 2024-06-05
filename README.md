@@ -5,7 +5,8 @@
 
 ## DEMO
 
-[https://marklaredo.netlify.com](https://marklaredo.netlify.com)
+[https://marklaredo.netlify.com](https://marklaredo.netlify.app)
+ 
 
 # Project setup
 ```
