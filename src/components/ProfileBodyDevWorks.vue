@@ -74,6 +74,18 @@ export default {
   data() {
     return {
       works: [
+      {
+          images: [
+            "irc_bulk_sms_dashboard.jpg",
+            "irc_bulk_sms.jpg",
+            "irc_bulk_sms_log_stats.jpg",
+          ],
+          system: "IRC Bulk SMS",
+          description: "IRC Bulk SMS Announcement",
+          platform: "Windows Forms",
+          writtenIn: "C#",
+          interval: Math.floor(Math.random() * 1000 + 5000),
+        },
         {
           images: [
             "irc_dashboard.png",
@@ -97,6 +109,7 @@ export default {
         },
         {
           images: [
+            //"stl_dashboard_0.png",
             "stl_login.png",
             "stl_dashboard.png",
             "stl_employee_info.png",
@@ -124,30 +137,22 @@ export default {
           writtenIn: "C#",
           interval: Math.floor(Math.random() * (6000 - 5800) + 5000),
         },
-        // {
-        //   images: [
-        //     "gorgo_landing_page.png",
-        //     "gorgo_registration.png",
-        //     "gorgo_talent_list.png",
-        //     "gorgo_talent_info.png"
-        //   ],
-        //   system: "GORGO",
-        //   description: "GORGO Talent Assistant",
-        //   platform: "ASP.NET MVC",
-        //   writtenIn: "C#",
-        //   interval: Math.floor(Math.random() * (6000 - 5800) + 5000)
-        // },
         {
           images: [
-            "irc_bulk_sms_dashboard.jpg",
-            "irc_bulk_sms.jpg",
-            "irc_bulk_sms_log_stats.jpg",
+            "sby_online_feed_back_0.png",
+            "sby_online_feed_back_1.png",
+            "sby_online_feed_back_2.png",
+            // "sby_online_feed_back_3.png",
+            "sby_online_feed_back_4.png",
+            "sby_online_feed_back_4.5.png",
+            "sby_online_feed_back_5.png",
           ],
-          system: "IRC Bulk SMS",
-          description: "IRC Bulk SMS Announcement",
-          platform: "Windows Forms",
+          system: "ONLINE CUSTOMER FEEDBACK",
+          description:
+            "Online Customer Feedback With Dynamic Data Visualization",
+          platform: ".Net Core & Nuxt.js",
           writtenIn: "C#",
-          interval: Math.floor(Math.random() * 1000 + 5000),
+          interval: Math.floor(Math.random() * (6000 - 5800) + 5000),
         },
       ],
     };
