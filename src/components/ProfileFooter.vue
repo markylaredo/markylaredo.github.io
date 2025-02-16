@@ -16,10 +16,11 @@
           </v-card-text>
           <v-divider></v-divider>
           <v-card-text class="white--text">
-            
             <v-icon>mdi-code-tags</v-icon>&nbsp;with&nbsp;
-            <v-icon color="red accent-3">mdi-cards-heart</v-icon>&nbsp;and&nbsp;fueled&nbsp;by
-            &nbsp;<v-icon color="brown darken-2">mdi-tea</v-icon>
+            <v-icon color="red accent-3">mdi-cards-heart</v-icon
+            >&nbsp;and&nbsp;fueled&nbsp;by &nbsp;<v-icon color="brown darken-2"
+              >mdi-tea</v-icon
+            >
             &nbsp;&copy; {{ new Date().getFullYear() }} 🌟
           </v-card-text>
         </v-card>
@@ -40,7 +41,7 @@ export default {
       {
         color: "",
         icon: "mdi-linkedin",
-        link: "https://ph.linkedin.com/in/mark-anthony-laredo-a22a74168",
+        link: "https://www.linkedin.com/in/mark-laredo",
       },
       {
         color: "black",
