@@ -70,7 +70,7 @@ export default {
         color: "blue",
         icon: "mdi-briefcase-account",
         year: "March 2019 - February 2024",
-        work: "Software Engineer",
+        work: "Software Developer",
         where: "Saudi Technical Limited",
         addr: "Riyadh, Saudi Arabia",
         highlights: [
@@ -84,7 +84,7 @@ export default {
         color: "blue",
         icon: "mdi-briefcase-account",
         year: "Jan 2019 - Mar 2020",
-        work: "Software Engineer",
+        work: "Software Developer",
         where: "Binary Data Frame Corporation",
         addr: "Las Pinas, Philippines",
         highlights: [
@@ -97,7 +97,7 @@ export default {
         color: "blue",
         icon: "mdi-briefcase-account",
         year: "Apr 2016 - Jan 2019",
-        work: "Software Engineer",
+        work: "Software Developer",
         where: "Jade Phone English",
         addr: "Quezon City, Philippines",
         highlights: [

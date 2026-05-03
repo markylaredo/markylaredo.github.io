@@ -9,9 +9,7 @@
             >
               <div>
                 <p class="mb-1 footer-name">Mark Anthony Laredo</p>
-                <p class="mb-0 footer-caption">
-                  Software Engineer / Software Developer
-                </p>
+                <p class="mb-0 footer-caption">Software Developer</p>
                 <p class="mb-0 footer-update">
                   Latest portfolio update: May 2026
                 </p>

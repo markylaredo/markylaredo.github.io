@@ -53,11 +53,11 @@ a {
 }
 
 .section-shell {
-  padding: 76px 0;
+  padding: 64px 0;
 }
 
 .section-shell--tight {
-  padding: 60px 0;
+  padding: 52px 0;
 }
 
 .section-title {
@@ -94,13 +94,23 @@ a {
   padding: 6px 11px;
 }
 
+.v-container {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
 @media (max-width: 768px) {
   .section-shell {
-    padding: 52px 0;
+    padding: 44px 0;
   }
 
   .section-shell--tight {
-    padding: 40px 0;
+    padding: 34px 0;
+  }
+
+  .v-container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
   }
 }
 

@@ -2,11 +2,11 @@
   <section id="about" class="section-shell section-about">
     <v-container fluid>
       <v-row justify="center">
-        <v-col cols="11" md="10" lg="9">
+        <v-col cols="12" md="11" lg="10">
           <v-card class="panel-card profile-card" rounded="xl">
             <v-card-text class="pa-6 pa-md-10">
               <v-row align="center" class="ga-6">
-                <v-col cols="12" md="4" class="text-center text-md-left">
+                <v-col cols="12" md="3" class="text-center text-md-left">
                   <v-avatar :size="160" class="profile-avatar mb-4">
                     <v-img :src="avatarImage" alt="mark anthony">
                       <template #placeholder>
@@ -36,8 +36,11 @@
                     >
                   </div>
                 </v-col>
-                <v-col cols="12" md="8">
-                  <!-- <span class="accent-pill mb-3">About Me</span> -->
+                <v-col cols="12" md="9">
+                  <span class="accent-pill mb-3">About Me</span>
+                  <h3 class="about-heading mb-3">
+                    Building reliable systems for real-world operations
+                  </h3>
                   <div class="about-copy">
                     <p class="mb-4 text-body-1">{{ aboutMe }}</p>
                     <p class="mb-4 text-body-1">{{ aboutMe2 }}</p>
@@ -45,7 +48,13 @@
                     <p class="mb-4 text-body-1">{{ aboutMe4 }}</p>
                     <p class="text-body-1">{{ aboutMe5 }}</p>
                   </div>
-                  <div class="strength-grid mt-6">
+                  <div class="about-focus mt-6">
+                    <p class="focus-title mb-3">Core Focus Areas</p>
+                    <ul class="focus-list">
+                      <li v-for="item in focusAreas" :key="item">{{ item }}</li>
+                    </ul>
+                  </div>
+                  <div v-if="strengths.length" class="strength-grid mt-6">
                     <div
                       v-for="item in strengths"
                       :key="item.title"
@@ -72,7 +81,7 @@ export default {
     return {
       avatarImage,
       myName: "Mark Anthony Maat Laredo",
-      myJob: "Software Engineer",
+      myJob: "Software Developer",
       aboutMe2:
         "I have over 9+ years of professional experience designing and building scalable, secure, and maintainable systems. My work focuses on solving complex, real-world operational challenges through well-structured and efficient software solutions.",
       aboutMe3:
@@ -81,25 +90,34 @@ export default {
         "My expertise centers on system architecture and clean implementation. I design scalable and maintainable solutions, emphasizing clear structure, reusability, and long-term system stability.",
       aboutMe5:
         "I have delivered systems featuring event-driven architecture, offline-first capabilities, and enterprise-grade workflows. I work across the full stack - from UI/UX to APIs and infrastructure - with a strong emphasis on performance, maintainability, and long-term system reliability.",
+      focusAreas: [
+        ".NET Core API architecture and modular backend design",
+        "Nuxt.js and Vue.js frontend systems with maintainable structure",
+        "Database modeling and optimization for MSSQL and PostgreSQL",
+        "Containerized Linux deployments using Docker",
+      ],
       strengths: [
-        // {
-        //   title: "Production Delivery",
-        //   description: "Build scalable systems ready for real-world usage.",
-        // },
-        // {
-        //   title: "Business Alignment",
-        //   description: "Translate requirements into practical solutions.",
-        // },
-        // {
-        //   title: "Long-term Support",
-        //   description: "Maintain and evolve systems post-deployment.",
-        // },
+        {
+          title: "Scalable Delivery",
+          description:
+            "Design and ship systems that stay reliable as usage grows.",
+        },
+        {
+          title: "Clean Architecture",
+          description:
+            "Use maintainable structures that make teams faster over time.",
+        },
+        {
+          title: "Long-term Reliability",
+          description:
+            "Prioritize performance, stability, and sustainable evolution.",
+        },
       ],
     };
   },
   computed: {
     aboutMe() {
-      return "Hi, I'm Mark Anthony Laredo, a Software Engineer based in the Philippines.";
+      return "Hi, I'm Mark Anthony Laredo, a Software Developer based in the Philippines.";
     },
   },
 };
@@ -130,11 +148,43 @@ export default {
 }
 
 .about-copy {
-  max-width: 740px;
+  width: 100%;
+}
+
+.about-heading {
+  color: var(--text-primary);
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.3;
 }
 
 .about-copy p {
   color: #3d5268;
+}
+
+.about-focus {
+  background: #f6f9fd;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+}
+
+.focus-title {
+  color: var(--text-primary);
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.focus-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
+}
+
+.focus-list li {
+  margin-bottom: 6px;
 }
 
 .strength-grid {
@@ -148,6 +198,7 @@ export default {
   border: 1px solid var(--border-soft);
   border-radius: 12px;
   padding: 16px;
+  box-shadow: 0 10px 18px rgb(10 34 58 / 7%);
 }
 
 .strength-title {

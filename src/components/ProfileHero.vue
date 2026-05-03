@@ -8,9 +8,7 @@
               <span class="brand-mark">ML</span>
               <div>
                 <p class="brand-name mb-0">Mark Anthony Laredo</p>
-                <p class="brand-role mb-0">
-                  Software Engineer / Software Developer
-                </p>
+                <p class="brand-role mb-0">Software Developer</p>
               </div>
             </div>
             <div class="hero-nav d-none d-md-flex">
@@ -121,7 +119,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 26px 20px 8px;
+  padding: 22px 20px 8px;
 }
 
 .brand-lockup {
@@ -180,7 +178,7 @@ export default {
 
 .hero-main-row {
   flex: 1;
-  padding-bottom: 42px;
+  padding-bottom: 30px;
 }
 
 .hero-title {
@@ -238,7 +236,7 @@ export default {
   }
 
   .hero-topbar {
-    padding: 18px 14px 0;
+    padding: 14px 10px 0;
   }
 
   .brand-role {
@@ -254,7 +252,7 @@ export default {
   }
 
   .hero-main-row {
-    padding-bottom: 22px;
+    padding-bottom: 16px;
   }
 }
 </style>
