@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap");
+
+:root {
+  --bg-page: #eef2f7;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f4f7fb;
+  --text-primary: #10263f;
+  --text-secondary: #42566d;
+  --accent: #0a738f;
+  --accent-deep: #085c73;
+  --accent-warm: #b8742f;
+  --border-soft: #d5dfeb;
+  --hero-overlay: linear-gradient(120deg, rgb(9 28 47 / 82%), rgb(8 46 71 / 66%));
+  --shadow-soft: 0 14px 28px rgb(11 37 63 / 9%);
+}
+
+html,
+body,
+#app {
+  background: linear-gradient(180deg, #f6f9fc 0%, var(--bg-page) 100%);
+  color: var(--text-primary);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+.hero-title,
+.section-title {
+  font-family: "Sora", "Manrope", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.72;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+.section-shell {
+  padding: 76px 0;
+}
+
+.section-shell--tight {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-size: clamp(1.6rem, 2vw, 2.1rem);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  max-width: 720px;
+}
+
+.panel-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.accent-pill {
+  background: color-mix(in oklab, var(--accent) 10%, white);
+  color: var(--accent-deep);
+  border-radius: 999px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 6px 11px;
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    padding: 52px 0;
+  }
+
+  .section-shell--tight {
+    padding: 40px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

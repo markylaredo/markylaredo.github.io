@@ -1,53 +1,43 @@
 /* eslint-disable no-console */
 
-import { register } from "register-service-worker";
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  const swUrl = `${import.meta.env.BASE_URL}service-worker.js`;
 
-if (process.env.NODE_ENV === "production") {
-  register(`${process.env.BASE_URL}service-worker.js`, {
-    ready() {
-      // console.log(
-      //   "App is being served from cache by a service worker.\n" +
-      //   "For more details, visit https://goo.gl/AFskqB"
-      // );
-    },
-    registered(registration) {
-      // console.log("Service worker has been registered.");
+  window.addEventListener("load", async () => {
+    try {
+      const registration = await navigator.serviceWorker.register(swUrl);
+
       setInterval(() => {
         registration.update();
-      }, 1000 * 60 * 60); // e.g. hourly checks
-    },
-    cached() {
-      // console.log("Content has been cached for offline use.");
-      document.dispatchEvent(
-        new CustomEvent("swOfflineCached", {
-          detail: true,
-        })
-      );
-    },
-    updatefound() {
-      // console.log("New content is downloading.");
-    },
-    updated(registration) {
-      document.dispatchEvent(
-        new CustomEvent("swUpdated", {
-          detail: registration,
-        })
-      );
-    },
-    offline() {
-      console.log(
-        "No internet connection found. App is running in offline mode."
-      );
-    },
-    error(error) {
+      }, 1000 * 60 * 60);
+
+      if (navigator.onLine) {
+        document.dispatchEvent(
+          new CustomEvent("swOfflineCached", {
+            detail: true,
+          })
+        );
+      }
+
+      registration.addEventListener("updatefound", () => {
+        const installingWorker = registration.installing;
+        if (!installingWorker) return;
+
+        installingWorker.addEventListener("statechange", () => {
+          if (
+            installingWorker.state === "installed" &&
+            navigator.serviceWorker.controller
+          ) {
+            document.dispatchEvent(
+              new CustomEvent("swUpdated", {
+                detail: registration,
+              })
+            );
+          }
+        });
+      });
+    } catch (error) {
       console.error("Error during service worker registration:", error);
-    },
+    }
   });
-  // /* eslint-disable */
-  // let refreshing;
-  // navigator.serviceWorker.addEventListener("controllerchange", (e) => {
-  //   if (refreshing) return;
-  //   window.location.reload();
-  //   refreshing = true;
-  // });
 }

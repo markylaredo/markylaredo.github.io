@@ -1,22 +1,32 @@
 <template>
   <v-app>
-    <v-slide-x-reverse-transition class="transition-swing" mode="out-in">
-      <v-snackbar bottom right color="info" v-model="newUpdate" :timeout="0">
-        {{ snackbarNewUpdateMessage }}
-        <v-btn white--text text @click="refreshPage">Refresh</v-btn>
-        <v-btn white--text text @click="newUpdate = false">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-      </v-snackbar>
-    </v-slide-x-reverse-transition>
-    <v-slide-y-transition class="transition-swing" mode="out-in">
-      <v-snackbar top center color="success" v-model="offlineUse" :timeout="0">
-        {{ snackbarOfflineMessage }}
-        <v-btn white--text text @click="offlineUse = false">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-      </v-snackbar>
-    </v-slide-y-transition>
+    <v-snackbar
+      location="bottom end"
+      color="info"
+      v-model="newUpdate"
+      :timeout="0"
+      transition="slide-x-reverse-transition"
+    >
+      {{ snackbarNewUpdateMessage }}
+      <v-btn class="text-white" variant="text" @click="refreshPage"
+        >Refresh</v-btn
+      >
+      <v-btn class="text-white" variant="text" @click="newUpdate = false">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </v-snackbar>
+    <v-snackbar
+      location="top center"
+      color="success"
+      v-model="offlineUse"
+      :timeout="0"
+      transition="slide-y-transition"
+    >
+      {{ snackbarOfflineMessage }}
+      <v-btn class="text-white" variant="text" @click="offlineUse = false">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </v-snackbar>
     <router-view />
   </v-app>
 </template>

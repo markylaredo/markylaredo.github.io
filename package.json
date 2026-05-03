@@ -2,61 +2,26 @@
   "name": "mark-anthony-laredo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "oxfmt src/"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "core-js": "^3.16.0",
-    "register-service-worker": "^1.7.1",
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.2",
-    "vuetify": "^2.5.8"
+    "@mdi/font": "^7.4.47",
+    "vuetify": "^3.10.3",
+    "vue": "^3.5.32",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-plugin-pwa": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.15.1",
-    "prettier": "^2.2.1",
-    "sass": "^1.37.2",
-    "sass-loader": "^10",
-    "vue-cli-plugin-vuetify": "^2.4.1",
-    "vue-template-compiler": "^2.6.14",
-    "vuetify-loader": "^1.4.3"
+    "@vitejs/plugin-vue": "^6.0.6",
+    "oxfmt": "^0.45.0",
+    "vite": "^8.0.8",
+    "vite-plugin-vue-devtools": "^8.1.1"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
 }
