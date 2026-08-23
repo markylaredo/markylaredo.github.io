@@ -58,14 +58,7 @@
 export default {
   data: () => ({
     works: [
-      {
-        color: "blue",
-        icon: "mdi-briefcase-account",
-        year: "April 2024 - Present",
-        work: "Software Developer",
-        where: "Occidental Mindoro Electric Cooperative, Inc.",
-        addr: "Philippines",
-      },
+
       {
         color: "blue",
         icon: "mdi-briefcase-account",
