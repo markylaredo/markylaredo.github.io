@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460">
+  <rect width="720" height="460" fill="#eef3f1"/>
+  <rect x="280" y="40" width="160" height="278" rx="24" fill="#273d35"/>
+  <rect x="290" y="51" width="140" height="254" rx="17" fill="#fff"/>
+  <rect x="332" y="51" width="56" height="10" rx="5" fill="#273d35"/>
+  <circle cx="360" cy="142" r="35" fill="#e5eee9"/>
+  <path d="m345 142 10 10 22-24" fill="none" stroke="#416954" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#dce6e0"><rect x="314" y="207" width="92" height="7" rx="3"/><rect x="314" y="228" width="72" height="7" rx="3"/><rect x="314" y="249" width="82" height="7" rx="3"/></g>
+  <text x="360" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="600" fill="#273d35">Inspector</text>
+  <text x="360" y="405" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#63756c">ANDROID APP</text>
+</svg>
